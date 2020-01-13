@@ -1,0 +1,136 @@
+{
+	"build_post": {
+		"prefix": "bupst",
+		"body": [
+			"import 'package:built_value/built_value.dart';",
+			"import 'package:built_value/serializer.dart';\n",
+			"part '$1.g.dart';\n",
+			"abstract class BuiltPost implements Built<BuiltPost, BuiltPostBuilder> {",
+			"\tBuiltPost._();\n",
+			"\tfactory BuiltPost([updates(BuiltPostBuilder b)]) = _\\$BuiltPost;\n",
+			"\tstatic Serializer<BuiltPost> get serializer => _\\$builtPostSerializer;",
+			"}"
+		]
+	},
+	"stateful_widget": {
+		"prefix": "stf",
+		"body": [
+			"class $1 extends StatefulWidget {",
+			"\t@override",
+			"\t_$1State createState() => _$1State();",
+			"}\n",
+			"class _$1State extends State<$1> {",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn Container();",
+			"\t}",
+			"}"
+		]
+	},
+	"material": {
+		"prefix": "impm",
+		"body": "import 'package:flutter/material.dart';\n"
+	},
+	"material_app": {
+		"prefix": "mta",
+		"description": "安卓材料设计应用",
+		"body": [
+			"import 'package:flutter/material.dart';\n",
+			"void main() => runApp($1App());\n",
+			"class $1App extends StatelessWidget {",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn MaterialApp(",
+			"\t\t\tdebugShowCheckedModeBanner: false,",
+			"\t\t\thome: HomePage(),",
+			"\t\t);",
+			"\t}",
+			"}\n",
+			"class HomePage extends StatelessWidget {",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn Scaffold(",
+			"\t\t\tbackgroundColor: Colors.white,",
+			"\t\t\tappBar: AppBar(",
+			"\t\t\t\tcenterTitle: true,",
+			"\t\t\t\ttitle: Text('Materilal App Bar'),",
+			"\t\t\t),",
+			"\t\t\tbody: Center(",
+			"\t\t\t\tchild: Image.network(",
+			"\t\t\t\t\t\t'https://raw.githubusercontent.com/Mr-Cai/Util-Res/master/pic/img/android.png'),",
+			"\t\t\t),",
+			"\t\t);",
+			"\t}",
+			"}$0"
+		]
+	},
+	"cupertino": {
+		"prefix": "impc",
+		"body": "import 'package:flutter/cupertino.dart';\n"
+	},
+	"cupotinal_app": {
+		"prefix": "cta",
+		"description": "苹果风格应用",
+		"body": [
+			"import 'package:flutter/cupertino.dart';\n",
+			"void main() => runApp($1App());\n",
+			"class $1App extends StatelessWidget {",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn CupertinoApp(",
+			"\t\t\tdebugShowCheckedModeBanner: false,",
+			"\t\t\thome: HomePage(),",
+			"\t\t);",
+			"\t}",
+			"}\n",
+			"class HomePage extends StatelessWidget {",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn CupertinoPageScaffold(",
+			"\t\t\tnavigationBar: CupertinoNavigationBar(",
+			"\t\t\t\tmiddle: Text('Cupertino Navigation Bar'),",
+			"\t\t\t),",
+			"\t\t\tchild: Center(",
+			"\t\t\t\tchild: Image.network('https://raw.githubusercontent.com/Mr-Cai/Util-Res/master/pic/img/apple.png'",
+			"\t\t\t\t\t\t''),",
+			"\t\t\t),",
+			"\t\t);",
+			"\t}",
+			"}$0"
+		]
+	},
+	"flutter_app": {
+		"prefix": "fap",
+		"description": "FlutterLogo",
+		"body": [
+			"import 'package:flutter/material.dart';\n",
+			"void main() => runApp($1App());\n",
+			"class $1App extends StatelessWidget {",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn MaterialApp(",
+			"\t\t\tdebugShowCheckedModeBanner: false,",
+			"\t\t\thome: HomePage(),",
+			"\t\t);",
+			"\t}",
+			"}\n",
+			"class HomePage extends StatelessWidget {",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\t\treturn Scaffold(",
+			"\t\t\tbackgroundColor: Colors.white,",
+			"\t\t\tappBar: AppBar(",
+			"\t\t\t\tcenterTitle: true,",
+			"\t\t\t\ttitle: Text('Materilal App Bar'),",
+			"\t\t\t),",
+			"\t\t\tbody: Center(",
+			"\t\t\t\tchild: FlutterLogo(",
+			"\t\t\t\t\tsize: 128,",
+			"\t\t\t\t),",
+			"\t\t\t),",
+			"\t\t);",
+			"\t}",
+			"}"
+		]
+	}
+}

@@ -1,0 +1,53 @@
+package com.example.myapplication
+
+import android.os.Bundle
+import android.os.Process
+import android.view.KeyEvent
+import android.widget.Toast
+
+import androidx.appcompat.app.AppCompatActivity
+import kotlin.system.exitProcess
+
+class MainActivity : AppCompatActivity() {
+    private var exitTime = 0L  // 退出时间初始值
+    private val isBackListener: Boolean
+        get() {
+            if (System.currentTimeMillis() - exitTime > 1500) {  // 按下返回键时间超过1.5秒
+                Toast.makeText(this, "再按一次返回键,可直接退出程序", Toast.LENGTH_SHORT).show()
+                exitTime = System.currentTimeMillis()   // 重置退出时间
+            } else {
+                finish()    // 关闭页面
+                Process.killProcess(Process.myPid())  // 结束App进程
+                exitProcess(0)  // 退出系统进程
+            }
+            return true // 确认执行
+        }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+
+    override fun onKeyUp(keyCode: Int, event: KeyEvent) =
+            if (keyCode == KeyEvent.KEYCODE_BACK) { // 拦截返回键防止监听失效
+                isBackListener
+            } else false
+
+}
+
+// 获取控件尺寸
+fun getViewSize(view: View): IntArray {
+     val w = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+     val h = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+     view.measure(w, h)       
+    return intArrayOf(view.measuredWidth, view.measuredHeight)
+}
+
+// 屏幕适配
+ window.attributes.layoutInDisplayCutoutMode = LAYOUT_IN_DISPLAY_CUTOUT_MODE_NEVER // 剪切凹槽屏状态栏
+LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES // 横屏填充凹槽屏状态栏
+window.statusBarColor = Color.TRANSPARENT // 透明状态栏
+window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR // 状态栏黑色字体
+
+// 布局监听
+container.getViewTreeObserver().addOnGlobalLayoutListener(this);

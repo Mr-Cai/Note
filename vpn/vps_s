@@ -1,0 +1,12 @@
+1. 
+    sudo -i
+    wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh && chmod +x shadowsocks-all.sh
+    ./shadowsocks-all.sh
+2.  sudo -i
+    wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh && chmod +x shadowsocksR.sh
+    ./shadowsocksR.sh
+3.  v2ray
+    sudo -i
+    bash <(curl -L -s https://install.direct/go.sh)
+    cat /etc/v2ray/config.json
+    service v2ray start
