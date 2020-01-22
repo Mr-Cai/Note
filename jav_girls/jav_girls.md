@@ -1,4 +1,4 @@
-● 唯井真寻 唯井まひろ Mahiro Tadai 2000 ![](./model_pic/MahiroTadai.jpg)
+● 穗高雏 穂高ひな Hodaka Hina 2001 ![](./model_pic/HodakaHina.jpg)
 
 ● 稻场琉花 稲場るか Ruka Inaba 2000 ![](./model_pic/RukaInaba.jpg)
 
