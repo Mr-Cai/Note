@@ -12,4 +12,6 @@
 
 ● 松本菜奈实 松本菜奈実 Nanami Matsumoto 1994 ![](./model_pic/NanamiMatsumoto.jpg)
 
-● ![](./model_pic/.jpg)
+● 新井优香 新井優香 Yuka Arai 1994![](./model_pic/YukaArai.jpg) 
+
+● ![](./model_pic/.jpg) 
