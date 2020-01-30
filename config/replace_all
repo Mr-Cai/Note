@@ -1,6 +1,6 @@
 Android:
     com.android.tools.build:gradle:3.5.3
-    distributionUrl=https\://services.gradle.org/distributions/gradle-6.0-all.zip
+    distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
     ext.kotlin_version = '1.3.61'
     kotlin-stdlib-jdk8
     minSdkVersion 19

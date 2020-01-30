@@ -7,6 +7,9 @@
     ./shadowsocksR.sh
 3.  v2ray
     sudo -i
+    apt install wget -y
     bash <(curl -L -s https://install.direct/go.sh)
-    cat /etc/v2ray/config.json
     service v2ray start
+    cat /etc/v2ray/config.json
+4.  BBR 加速
+    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
