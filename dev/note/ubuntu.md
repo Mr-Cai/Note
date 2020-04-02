@@ -72,3 +72,51 @@ teamviewer passwd xxxx 设置访问密码
 teamviewer info 查看连接信息
 
 🎉 好了！可以远程连接了 😎
+
+
+
+● 查看所有文件列表 
+  ls -a -lh
+  la -lh
+  l -a -lh
+  l
+
+● 获取管理员权限 sudo -i 
+
+● 删除不常用软件
+sudo -i
+rm -rf /usr/share/applications/com.canonical.launcher.amazon.desktop /usr/share/applications/ubuntu-amazon-default.desktop
+apt purge -y libreoffice-common thunderbird* firefox deja-dup simple-scan hplip* 
+apt purge -y printer-driver* rhythmbox* gedit* libreoffice* onboard mahjongg aisleriot gnomine wodim 
+apt purge -y gnome-orca gnome-sudoku gnome-startup-applications gnome-todo remmina*
+apt purge -y cheese gnome-power-manager gnome-mahjongg gnome-calendar gnome-video-effects 
+apt purge -y shotwell transmission* ubuntu-software* ubuntu-sounds* htop gnome-screenshot
+apt purge -y gnome-terminal* xterm* gnome-software*
+
+● 安装中文简体
+sudo -i
+系统语言汉化包 apt install language-pack-zh-hans language-pack-zh-hans-base language-pack-gnome-zh-hans language-pack-gnome-zh-hans-base
+软件语言中文包 apt install `check-language-support -l zh` -y
+设置默认为中文 localectl set-locale LANG=zh_CN.UTF-8
+重启 reboot
+
+● 查看公网IP
+curl ipinfo.io
+
+● 强制重启  
+sudo -i
+reboot -p  立即关机重启
+reboot -f  立即切断电源并重启
+
+● 更新系统
+sudo -i
+apt dist-upgrade
+
+● 查找占用指定端口号的进程编号 
+sudo -i
+lsof -i:8080
+kill <pid>
+
+● 
+
+● 

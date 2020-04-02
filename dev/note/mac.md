@@ -1,0 +1,3 @@
+● 苹果模拟器全屏模式开启
+defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
+

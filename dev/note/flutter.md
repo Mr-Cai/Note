@@ -20,4 +20,4 @@ void main() {
   [...]
 }
 
-flutter run -d <devide-name>
+flutter run -d <device-name>

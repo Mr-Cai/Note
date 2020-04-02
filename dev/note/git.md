@@ -1,6 +1,3 @@
-● 苹果模拟器全屏模式开启
-defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
-
 ● Git push 卡住
 # 全局
 git config –global sendpack.sideband false
