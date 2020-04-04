@@ -21,3 +21,10 @@ void main() {
 }
 
 flutter run -d <device-name>
+
+🦠 错误日志
+========================================================
+● Duplicate GlobalKey detected in widget tree
+```log
+Duplicate GlobalKey detected in widget tree.
+```
