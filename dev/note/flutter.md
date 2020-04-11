@@ -3,7 +3,6 @@
 export PUB_HOSTED_URL=https://pub.flutter-io.cn  
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
-
 ● web:
 flutter channel master | dev
 flutter config --enable-web
@@ -113,6 +112,31 @@ E/AndroidRuntime: FATAL EXCEPTION: main
         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
         at dalvik.system.NativeStart.main(Native Method)
 ```
+❌未解决
+
+
+--------------------------------------------------------
+
+● Duplicate GlobalKey detected in widget tree.
+
+```log
+Duplicate GlobalKey detected in widget tree.
+```
+❌未解决
+
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,27 +151,4 @@ xxx
 ✅解决  
 ❌未解决
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-● 标题
-```log
-xxx
-```
-✅解决  
-❌未解决
+--------------------------------------------------------

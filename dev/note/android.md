@@ -46,7 +46,17 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 ● 添加一行命令参数 --warning-mode all  
 > ![](../assets/images/gradle_deprecated.png)
 
-🦠 >
+🦠 > INSTALL_FAILED_INSUFFICIENT_STORAGE
 ---------------------------------------------------------
+```log
+Installation did not succeed.
+The application could not be installed: INSTALL_FAILED_INSUFFICIENT_STORAGE
 
+List of apks:
+[0] '/xx/xx/app-debug.apk'
+The device needs more free storage to install the application (extra space is needed in addition to APK size).
+Retry
+```
+
+❌未解决
 
