@@ -51,3 +51,10 @@ window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR // �
 
 // 布局监听
 container.getViewTreeObserver().addOnGlobalLayoutListener(this);
+
+// 跳转并替换Activity
+Intent(this, MainActivity::class.java).setFlags(
+Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+
+// 跳转至指定路由
+.setAction(Intent.ACTION_RUN).putExtra("route", "/$route")

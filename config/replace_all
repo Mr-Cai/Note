@@ -1,6 +1,7 @@
 Android:
-    com.android.tools.build:gradle:3.6.2
+    com.android.tools.build:gradle:3.6.3
     distributions/gradle-6.3
+    -bin.zip -all.zip
     #android.enableR8=true
     ext.kotlin_version = '1.3.71'
     kotlin-stdlib-jdk8

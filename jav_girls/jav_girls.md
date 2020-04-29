@@ -6,8 +6,6 @@
 
 ● 1998 香坂纱梨 香坂紗梨 Kousaka Sari ![G](./model_pic/KousakaSari.jpg) 
 
-● 1998 永濑未萌 永瀬みなも Minamo Nagase![G](./model_pic/MinamoNagase.jpg) 
-
 ● 1996 佐仓宁宁 佐倉ねね Nene Sakura ![H](./model_pic/NeneSakura.jpg)
 
 ● 1996 樱空桃 桜空もも Momo Sakura ![G](./model_pic/MomoSakura.jpeg)
