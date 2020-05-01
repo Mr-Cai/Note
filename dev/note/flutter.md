@@ -128,6 +128,17 @@ Duplicate GlobalKey detected in widget tree.
 --------------------------------------------------------
 
 
+● Duplicate GlobalKey detected in widget tree.
+
+```log
+出现异常。
+DioError (DioError [DioErrorType.DEFAULT]: HandshakeException: Connection terminated during handshake)
+```
+❌未解决
+
+--------------------------------------------------------
+
+
 
 
 
