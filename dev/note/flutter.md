@@ -36,6 +36,7 @@ Duplicate GlobalKey detected in widget tree.
 ❌未解决
 
 --------------------------------------------------------
+
 ● Flutter SDK not found. 
 ```log
 Define location with flutter.sdk in the local.properties file
@@ -43,11 +44,17 @@ A problem occurred evaluating project ':app'.
 > Flutter SDK not found. Define location with flutter.sdk in the local.properties file.
 ```
 ✅解决  
+·
 > 打开Android Studio 设置 > 搜索flutter >  
 > 修改路径 > 打开local.properties > 在底下输入      
 > flutter.sdk=/Users/caikaige/Library/flutter    
 > 如图所示   
-![](../assets/images/flutter_sdk.png)
+![](../assets/images/flutter_sdk.png)  
+
+·
+> 打开local.properties
+> 手动输入路径 
+flutter.sdk=/xxx/xxx/flutter
 
 --------------------------------------------------------
 
@@ -114,17 +121,6 @@ E/AndroidRuntime: FATAL EXCEPTION: main
 ```
 ❌未解决
 
-
---------------------------------------------------------
-
-● Duplicate GlobalKey detected in widget tree.
-
-```log
-Duplicate GlobalKey detected in widget tree.
-```
-❌未解决
-
-
 --------------------------------------------------------
 
 
@@ -138,28 +134,25 @@ DioError (DioError [DioErrorType.DEFAULT]: HandshakeException: Connection termin
 
 --------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-● 标题
+● MissingPluginException
 ```log
-xxx
+E/flutter: [ERROR:flutter/lib/ui/ui_dart_state.cc(157)] Unhandled Exception: MissingPluginException(No implementation found for method config on channel tencent_ad)
 ```
 ✅解决  
-❌未解决
+> 检查 io.flutter.plugins 包下是否存GeneratedPluginRegistrant文件, 如果不存在，请使用flutter run 重新生成一次
+
 
 --------------------------------------------------------
+
+● 
+
+```log
+SocketException: OS Error: Operation timed out, errno = 60, address = pub.dartlang.org, port = 56561
+```
+✅解决  
+> 在中国发布flutter插件被防火墙攻击，翻墙软件不可用，需要配合Proxifier,
+实现全局代理
+> 查看翻墙软件端口号，如：7899
+> 打开Proxifier添加规则，输入 127.0.0.1:7899, 设置本机代理
+> 将发布命令替换为 sudo flutter pub publish -v
+> 多次尝试

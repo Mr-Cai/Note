@@ -1,13 +1,4 @@
-package com.example.myapplication
-
-import android.os.Bundle
-import android.os.Process
-import android.view.KeyEvent
-import android.widget.Toast
-
-import androidx.appcompat.app.AppCompatActivity
-import kotlin.system.exitProcess
-
+// 退出挽留返回键监听
 class MainActivity : AppCompatActivity() {
     private var exitTime = 0L  // 退出时间初始值
     private val isBackListener: Boolean

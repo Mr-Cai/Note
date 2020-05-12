@@ -1,11 +1,19 @@
 获取权限: sudo -i
+
 修改密码: passwd
+
 查看安全配置: nano /etc/ssh/sshd_config
-修改配置: 
+
+● 修改登录配置: 
 PasswordAuthentication yes
 PermitRootLogin yes
+PubkeyAuthentication yes
+
 重启配置: service ssh restart
+
 更新命令工具: apt upgrade && apt update 
+
+● 安装Ubuntu桌面:
 安装Ubuntu桌面: apt install ubuntu-desktop -y
 安装虚拟视频驱动: apt install xserver-xorg-video-dummy -y
 查看驱动配置: nano /etc/X11/xorg.conf
@@ -30,7 +38,6 @@ Section "Screen"
     EndSubSection
 EndSection
 
-
 Section "Monitor"
   Identifier "Monitor0"
   HorizSync 28.0-80.0
@@ -52,11 +59,7 @@ Section "Screen"
   SubSection "Display"
     Depth 24
     Modes "1920x1080_60.00"
-  EndSubSection
-
-
-
-
+EndSubSection
 
 
 重启服务器: reboot
@@ -71,15 +74,14 @@ teamviewer daemon start 开启服务
 teamviewer passwd xxxx 设置访问密码
 teamviewer info 查看连接信息
 
-🎉 好了！可以远程连接了 😎
-
-
-
 ● 查看所有文件列表 
   ls -a -lh
   la -lh
   l -a -lh
   l
+  ll
+  ll -h
+  ls
 
 ● 获取管理员权限 sudo -i 
 
@@ -100,23 +102,28 @@ sudo -i
 设置默认为中文 localectl set-locale LANG=zh_CN.UTF-8
 重启 reboot
 
-● 查看公网IP
-curl ipinfo.io
+● 清理老旧垃圾
+apt autoremove
 
-● 强制重启  
-sudo -i
-reboot -p  立即关机重启
-reboot -f  立即切断电源并重启
+● ssh上传、下载文件
+上传:  scp path/file.xx root@106.53.106.142:/user/path
+下载:  scp root@106.53.106.142:/user/path/file.xx path/
+文件夹: scp -r 
 
-● 更新系统
-sudo -i
-apt dist-upgrade
+● 后台运行Jar
+nohub java -jar xx.jar &  # 简易
+nohup java -jar /user/path/xx.jar >/user/path/xx.log 2>&1 & # 完整
 
-● 查找占用指定端口号的进程编号 
-sudo -i
-lsof -i:8080
-kill <pid>
+● 关闭后台运行Jar
+jobs # 查看后台任务编号
+fg 0 # 切换指定编号到前台
+ctrl + c
 
-● 
+● 关闭shell脚本中的jar进程
+● ps -ef | grep java
+● kill 编号
 
-● 
+● 开机自启动脚本
+
+●
+

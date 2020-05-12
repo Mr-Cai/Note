@@ -1,7 +1,7 @@
 Android:
     com.android.tools.build:gradle:3.6.3
-    distributions/gradle-6.4
     -bin.zip -all.zip
+    distributions/gradle-6.3
     #android.enableR8=true
     ext.kotlin_version = '1.3.71'
     kotlin-stdlib-jdk8
@@ -11,5 +11,24 @@ Android:
     com.google.gms:google-services:4.3.3
     android:minSdkVersion="16"
     android:targetSdkVersion="29"
+```
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+to
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(':app')
+}
+```
+
+
+
+
 IOS:
 platform :ios, '10.0'
