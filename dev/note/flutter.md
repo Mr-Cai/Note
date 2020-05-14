@@ -144,7 +144,7 @@ E/flutter: [ERROR:flutter/lib/ui/ui_dart_state.cc(157)] Unhandled Exception: Mis
 
 --------------------------------------------------------
 
-● 
+● SocketException: OS Error: Operation timed out
 
 ```log
 SocketException: OS Error: Operation timed out, errno = 60, address = pub.dartlang.org, port = 56561
@@ -156,3 +156,28 @@ SocketException: OS Error: Operation timed out, errno = 60, address = pub.dartla
 > 打开Proxifier添加规则，输入 127.0.0.1:7899, 设置本机代理
 > 将发布命令替换为 sudo flutter pub publish -v
 > 多次尝试
+
+--------------------------------------------------------
+
+● @mustCallSuper
+```log
+This method overrides a method annotated as '@mustCallSuper' in 'PositionComponent', but doesn't invoke the overridden method.
+```
+> 在方法名底下添加 super.xxx(xx);
+> 在方法名上面添加 @override
+
+
+✅解决
+❌未解决
+
+
+
+
+
+
+
+
+
+● 
+✅解决
+❌未解决

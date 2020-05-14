@@ -1,6 +1,6 @@
 Android:
     com.android.tools.build:gradle:3.6.3
-    -bin.zip -all.zip
+    -all.zip -all.zip
     distributions/gradle-6.3
     #android.enableR8=true
     ext.kotlin_version = '1.3.71'
