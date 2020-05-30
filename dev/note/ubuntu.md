@@ -78,6 +78,10 @@ sudo -i
 设置默认为中文 localectl set-locale LANG=zh_CN.UTF-8
 重启 reboot
 
+● 安装Chrome
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+
 ● 清理老旧垃圾
 apt autoremove
 
@@ -104,3 +108,7 @@ ctrl + c
 ● 升级系统
 apt upgrade && apt update -y
 do-release-upgrade
+
+● 删除文件失效不被允许
+lsattr  # 查看文件权限属性
+chattr -i <file>  # 去除(不得任意更动文件或目录)属性

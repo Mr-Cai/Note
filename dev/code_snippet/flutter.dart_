@@ -18,3 +18,12 @@ WillPopScope(
         return false;
     },
 );
+
+// 彻底隐藏顶部状态栏
+PreferredSize(
+  preferredSize: Size.fromHeight(MediaQueryData.fromWindow(window).padding.top),
+  child: SafeArea(
+  top: true,
+  child: Offstage(),
+ ),
+),

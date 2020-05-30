@@ -163,21 +163,24 @@ SocketException: OS Error: Operation timed out, errno = 60, address = pub.dartla
 ```log
 This method overrides a method annotated as '@mustCallSuper' in 'PositionComponent', but doesn't invoke the overridden method.
 ```
+✅解决
 > 在方法名底下添加 super.xxx(xx);
 > 在方法名上面添加 @override
 
+--------------
 
+● Dio 415
+```log
+[ERROR:flutter/lib/ui/ui_dart_state.cc(157)] Unhandled Exception: DioError [DioErrorType.RESPONSE]: Http status error [415]
+```
 ✅解决
-❌未解决
-
-
-
-
-
-
-
+> post请求参数名写成了queryParameters
+> 修改参数为data
+--------------------------------------------------------
 
 
 ● 
 ✅解决
 ❌未解决
+
+--------------------------------------------------------
