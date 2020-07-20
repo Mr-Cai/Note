@@ -13,3 +13,9 @@
 > git rm -rf --cached . 
 > git commit -am msg
 > git push
+
+● Git 代理连接被拒
+Failed to connect to 127.0.0.1 port xxx: Connection refused
+> git config --global --unset http.proxy
+> git config --global --unset https.proxy
+> git push --set-upstream origin master
