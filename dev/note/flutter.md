@@ -3,6 +3,9 @@
 export PUB_HOSTED_URL=https://pub.flutter-io.cn  
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
+Building flutter tool... 卡住(关闭代理软件尝试)
+
+
 ● web:
 flutter channel master | dev
 flutter config --enable-web
@@ -33,7 +36,7 @@ flutter run -d \<device-name>
 ```log
 Duplicate GlobalKey detected in widget tree.
 ```
-❌未解决
+❌ 未解决
 
 --------------------------------------------------------
 
@@ -43,7 +46,7 @@ Define location with flutter.sdk in the local.properties file
 A problem occurred evaluating project ':app'.
 > Flutter SDK not found. Define location with flutter.sdk in the local.properties file.
 ```
-✅解决  
+✅ 解决  
 ·
 > 打开Android Studio 设置 > 搜索flutter >  
 > 修改路径 > 打开local.properties > 在底下输入      
@@ -179,9 +182,24 @@ This method overrides a method annotated as '@mustCallSuper' in 'PositionCompone
 --------------------------------------------------------
 
 
-● 
-✅解决
-❌未解决
+● flutter android license 异常
+```log
+flutter doctor --android-licenses
+Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
+	at com.android.repository.api.SchemaModule$SchemaModuleVersion.<init>(SchemaModule.java:156)
+	at com.android.repository.api.SchemaModule.<init>(SchemaModule.java:75)
+	at com.android.sdklib.repository.AndroidSdkHandler.<clinit>(AndroidSdkHandler.java:81)
+	at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:73)
+	at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:48)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 5 more
+```
+
+✅ 解决
+> 打开Android Studio > SDK管理 > 勾选最新版的SDK Tool，卸载旧版
 
 --------------------------------------------------------
 

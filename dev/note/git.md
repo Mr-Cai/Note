@@ -1,9 +1,9 @@
 ● Git push 卡住  
 全局  
-> git config –global sendpack.sideband false  
+> git config --global sendpack.sideband false
 
 仓库  
-> git config –local sendpack.sideband false
+> git config –-local sendpack.sideband false
 
 ● Git 删除远程分支无效  
 > git fetch -p origin     
@@ -19,3 +19,7 @@ Failed to connect to 127.0.0.1 port xxx: Connection refused
 > git config --global --unset http.proxy
 > git config --global --unset https.proxy
 > git push --set-upstream origin master
+
+● Git 克隆过慢, 克隆超时
+设置代理端口为翻墙软件端口
+> git config --global http.https://github.com.proxy socks5://127.0.0.1:9090
