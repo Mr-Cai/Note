@@ -4,7 +4,7 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 Building flutter tool... 卡住(关闭代理软件尝试)
-
+Running pub upgrade... 卡住(关闭代理并切换到管理员)
 
 ● web:
 flutter channel master | dev
@@ -39,6 +39,10 @@ Duplicate GlobalKey detected in widget tree.
 ❌ 未解决
 
 --------------------------------------------------------
+
+● pub.flutter-io.cn%20 is not a valid link-local address
+✅ 解决  
+windows配置国内环境变量后记得关闭翻墙软件
 
 ● Flutter SDK not found. 
 ```log

@@ -36,6 +36,12 @@ substring(
   MD5(RAND()),1,16 
 )
 
-● 
-● 
+● Windows 环境变量
+set NAME=<PATH>|<URL>
+eg: set ADB=C:\Users\M\Documents\adb\
+set CON=https://example.com.cn
+
+● Windows 打印程序路径
+ (Get-Command xx.exe).Path
+ 
 ● 
