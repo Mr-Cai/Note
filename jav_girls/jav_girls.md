@@ -14,7 +14,7 @@
 
 ● 1996 樱空桃  Momo Sakura ![G](./model_pic/MomoSakura.jpeg)
 
-● 1994 安斋拉拉(宇都宫紫苑) Rara Anzai(RION) ![K](./model_pic/RION.jpg)
+● 1994 安斋拉拉(宇都宫紫苑) Rara Anzai(RION|Shion Utsunomiya) ![K](./model_pic/RION.jpg)
 
 ● 1994 松本菜奈实 Nanami Matsumoto ![J](./model_pic/NanamiMatsumoto.jpg)
 
