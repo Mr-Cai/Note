@@ -1,4 +1,6 @@
-● 2002 小野六花  Rikka Ono ![C](./model_pic/RikkaOno.jpeg) 
+● 2002 小野六花 Rikka Ono ![C](./model_pic/RikkaOno.jpeg) 
+
+● 2001 神坂朋子 Tomoko Kamisaka ![I](./model_pic/.jpeg) 
 
 ● 2000 前田桃杏 Moa Maeda  ![I](./model_pic/MoaMaeda.jpeg)
 
@@ -21,6 +23,8 @@
 ● 1993 本真友里 Yuri Honma ![H](./model_pic/YuriHonma.jpg)
 
 ● 1991 北川瞳 Hitomi Kitagawa ![H](./model_pic/HitomiKitagawa.jpg) 
+
+● 1991 涩谷果步 Shibuya Kaho ![J](./model_pic/ShibuyaKaho.jpg) 
 
 ● 1990 星咲优菜 Yuna Hoshizaki ![H](./model_pic/YunaHoshizaki.jpg)
 
