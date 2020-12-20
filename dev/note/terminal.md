@@ -44,4 +44,4 @@ set CON=https://example.com.cn
 ● Windows 打印程序路径
  (Get-Command xx.exe).Path
  
-● 
+● 首选 DNS 119.29.29.29
