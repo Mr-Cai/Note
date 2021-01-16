@@ -45,3 +45,10 @@ set CON=https://example.com.cn
  (Get-Command xx.exe).Path
  
 ● 首选 DNS 119.29.29.29
+
+● ffmpeg merge mkv 
+ffmpeg -i video.webm -i audio.m4a -c copy output.mkv
+
+
+● ffmpeg mkv to h265
+ffmpeg -i output.mkv -qscale 2 -vcodec libx265 video.mp4

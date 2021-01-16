@@ -1,6 +1,7 @@
 ● 2002 小野六花 Rikka Ono ![C](./model_pic/RikkaOno.jpeg) 
 
 ● 2001 神坂朋子 Tomoko Kamisaka ![I](./model_pic/.jpeg) 
+稲場るか
 
 ● 2000 前田桃杏 Moa Maeda  ![I](./model_pic/MoaMaeda.jpeg)
 
