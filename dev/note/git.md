@@ -22,8 +22,12 @@ Failed to connect to 127.0.0.1 port xxx: Connection refused
 
 ● Git 克隆过慢, 克隆超时
 设置代理端口为翻墙软件端口
-> git config --global http.https://github.com.proxy socks5://127.0.0.1:9090
+> git config --global http.https://github.com.proxy socks5://127.0.0.1:7890
 
 ● Git 拉取卡住
 清除缓存垃圾
 > git gc --prune=now
+
+● Git 无法访问Gist
+fatal: unable to access 'https://gist.github.com/xx.git/': Failed to connect to gist.github.com port 443: Timed out
+> 
