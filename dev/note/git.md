@@ -26,7 +26,7 @@ Failed to connect to 127.0.0.1 port xxx: Connection refused
 
 ● Git 拉取卡住
 清除缓存垃圾
-> git gc --prune=now
+> git gc --prune=now.
 
 ● Git 无法访问Gist
 fatal: unable to access 'https://gist.github.com/xx.git/': Failed to connect to gist.github.com port 443: Timed out
