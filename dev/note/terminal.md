@@ -44,11 +44,17 @@ set CON=https://example.com.cn
 ● Windows 打印程序路径
  (Get-Command xx.exe).Path
  
+● Windows 显示屏幕键盘
+ osk
+
+● Windows 版本及品牌
+ winver dxdiag
+
+ 
 ● 首选 DNS 119.29.29.29
 
 ● ffmpeg merge mkv 
 ffmpeg -i video.webm -i audio.m4a -c copy output.mkv
-
 
 ● ffmpeg mkv to h265
 ffmpeg -i output.mkv -qscale 2 -vcodec libx265 video.mp4

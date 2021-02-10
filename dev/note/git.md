@@ -31,3 +31,10 @@ Failed to connect to 127.0.0.1 port xxx: Connection refused
 ● Git 无法访问Gist
 fatal: unable to access 'https://gist.github.com/xx.git/': Failed to connect to gist.github.com port 443: Timed out
 > 
+
+● Git 下载指定文件/文件夹
+> git init [folderName] && cd [folderName]
+> git remote add -f origin [repositoryURL]
+> git config core.sparseCheckout true
+> git sparse-checkout set [folderName]
+> git pull origin [branchName] 

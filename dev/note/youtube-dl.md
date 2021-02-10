@@ -22,3 +22,5 @@ youtube-dl --download-archive .\Archive.txt https://www.youtube.com/channel/UCEi
 下载播放列表
 youtube-dl --yes-playlist <listID>
 
+CERTIFICATE_VERIFY_FAILED
+youtube-dl --no-check-certificate
